@@ -1,0 +1,37 @@
+
+
+.cards {
+  &-list { 
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 160px;
+  background: #F9F9F9;
+  text-align: center;
+  cursor: pointer;
+
+  &__category {
+    color: #232F3E;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

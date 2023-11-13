@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  width: 10%;
+  height: 108px;
+
+  &-link {
+    display: block;
+    
+    svg {
+      fill: blue;
+    }
+  }
+}

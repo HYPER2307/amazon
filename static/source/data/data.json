@@ -1,0 +1,46 @@
+[
+  {
+    "cardImg": "/static/source/img/categories/car.svg",
+    "name": "Automtive"
+  },
+  {
+    "cardImg": "/static/source/img/categories/child.svg",
+    "name": "Baby"
+  },
+  {
+    "cardImg": "/static/source/img/categories/beauty.svg",
+    "name": "Beauty & Personal care"
+  },
+  {
+    "cardImg": "/static/source/img/categories/women.svg",
+    "name": "Women' s Fashion"
+  },
+  {
+    "cardImg": "/static/source/img/categories/men.svg",
+    "name": "Men's Fashion"
+  },
+  {
+    "cardImg": "/static/source/img/categories/car.svg",
+    "name": "Automtive"
+  },
+  {
+    "cardImg": "/static/source/img/categories/heart.svg",
+    "name": "Health & Household"
+  },
+  {
+    "cardImg": "/static/source/img/categories/kitchen.svg",
+    "name": "Home & Kitchen"
+  },
+  {
+    "cardImg": "/static/source/img/categories/pets.svg",
+    "name": "Pet Supplies"
+  },
+  {
+    "cardImg": "/static/source/img/categories/film.svg",
+    "name": "Movies & Television"
+  },
+  {
+    "cardImg": "/static/source/img/categories/suitcase.svg",
+    "name": "Luggage"
+  }
+]

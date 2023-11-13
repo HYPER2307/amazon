@@ -1,0 +1,21 @@
+.button {
+  width: 124px;
+  height: 32px;
+  cursor: pointer;
+
+  &--blue {
+    background: #146EB4;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &--transparent {
+    border: 1px solid #146EB4;
+    background: #FFF;
+    color: #146EB4;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

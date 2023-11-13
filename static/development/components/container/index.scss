@@ -1,0 +1,13 @@
+@import "../../scss/variables.scss";
+
+.container {
+  margin: 0 auto;
+
+  &__header {
+    max-width: $medium-screen;
+  }
+
+  &__main {
+    max-width: $medium-screen;
+  }
+}
