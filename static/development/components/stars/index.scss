@@ -1,0 +1,25 @@
+.stars-container {
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    display: none;
+    transition: all .2s ease;
+
+    &:not(:checked) ~ label:hover,
+    &:not(:checked) ~ label:hover ~ label {
+      color: #fd4;
+    }
+
+    &:checked ~ label {
+      color: #fd4;
+    }
+  }
+}
+
+.star {
+  color: #444;
+  cursor: pointer;
+  transition: all .2s ease;
+  float: right;
+}

@@ -8,6 +8,13 @@
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
+    transition: all .3s ease;
+
+    &:hover {
+      border: 1px solid #146EB4;
+      background: #FFF;
+      color: #146EB4;
+    }
   }
 
   &--transparent {
@@ -17,5 +24,11 @@
     text-align: center;
     font-size: 12px;
     font-weight: 500;
+    transition: all .3s ease;
+
+    &:hover {
+      background: #146EB4;
+      color: #FFF;
+    }
   }
 }

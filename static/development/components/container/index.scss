@@ -2,12 +2,20 @@
 
 .container {
   margin: 0 auto;
-
-  &__header {
-    max-width: $medium-screen;
-  }
+  max-width: $medium-screen;
+  width: 100%;
+  padding: 0 132px;
 
   &__main {
     max-width: $medium-screen;
+    width: 100%;
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  @media (max-width: 1230px) {
+    max-width: 1024px;
   }
 }

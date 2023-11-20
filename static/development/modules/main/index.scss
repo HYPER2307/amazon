@@ -1,3 +1,5 @@
+@import "../../scss/variables.scss";
+
 .main {
   &__swiper {
     position: relative;
@@ -15,7 +17,7 @@
     }
 
     &-content {
-      width: 445px;
+      max-width: 445px;
 
       &-model {
         color: #F90;
@@ -25,10 +27,6 @@
       }
 
       &-title {
-        font-family: Poppins;
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 58px;
         margin-bottom: 16px;
       }
 
@@ -47,16 +45,46 @@
     }
   }
 
-  &__categories {
-    &-title {
-      color: #000;
-      font-size: 24px;
-      font-weight: 400;
+  @media (max-width: $xs-screen) {
+    &__swiper {
+      &-content {
+        &-model {
+          font-size: 12px;
+        }
+      }
 
+      &-img {
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  &__categories {
+    position: relative;
+    margin-bottom: 82px;
+
+    &-container {
+      margin: 0 -20px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    &-swiper {
+      width: 100%;
+      overflow: visible !important;
+    }
+
+    &-title {
       &-container {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        margin-bottom: 40px;
       }
     }
 
@@ -64,6 +92,12 @@
       color: #146EB4;
       font-size: 16px;
       font-weight: 500;
+      transition: all .3s ease;
+
+      &:hover {
+        scale: 1.2;
+        color: #509cd6;
+      }
     }
   }
 }

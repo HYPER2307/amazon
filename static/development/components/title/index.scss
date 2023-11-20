@@ -1,0 +1,22 @@
+@import "../../scss/variables.scss";
+
+.title {
+  &--xl {
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px;
+  }
+
+  &--l {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  @media (max-width: $xs-screen) {
+    &--xl {
+      font-size: 40px;
+    }
+  }
+}

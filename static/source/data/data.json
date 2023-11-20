@@ -1,46 +1,52 @@
 [
   {
     "cardImg": "/static/source/img/categories/car.svg",
-    "name": "Automtive"
+    "name": "Automtive",
+    "id": "automtive"
   },
   {
     "cardImg": "/static/source/img/categories/child.svg",
-    "name": "Baby"
+    "name": "Baby",
+    "id": "baby"
   },
   {
     "cardImg": "/static/source/img/categories/beauty.svg",
-    "name": "Beauty & Personal care"
+    "name": "Beauty & Personal care",
+    "id": "beauty-personal-care"
   },
   {
     "cardImg": "/static/source/img/categories/women.svg",
-    "name": "Women' s Fashion"
+    "name": "Women' s Fashion",
+    "id": "women's-fashion"
   },
   {
     "cardImg": "/static/source/img/categories/men.svg",
-    "name": "Men's Fashion"
-  },
-  {
-    "cardImg": "/static/source/img/categories/car.svg",
-    "name": "Automtive"
+    "name": "Men's Fashion",
+    "id": "men's-fashion"
   },
   {
     "cardImg": "/static/source/img/categories/heart.svg",
-    "name": "Health & Household"
+    "name": "Health & Household",
+    "id": "health-household"
   },
   {
     "cardImg": "/static/source/img/categories/kitchen.svg",
-    "name": "Home & Kitchen"
+    "name": "Home & Kitchen",
+    "id": "home-kitchen"
   },
   {
     "cardImg": "/static/source/img/categories/pets.svg",
-    "name": "Pet Supplies"
+    "name": "Pet Supplies",
+    "id": "pet-supplies"
   },
   {
     "cardImg": "/static/source/img/categories/film.svg",
-    "name": "Movies & Television"
+    "name": "Movies & Television",
+    "id": "movies-television"
   },
   {
     "cardImg": "/static/source/img/categories/suitcase.svg",
-    "name": "Luggage"
+    "name": "Luggage",
+    "id": "luggage"
   }
 ]

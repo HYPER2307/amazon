@@ -1,15 +1,24 @@
 @import "../../scss/variables.scss";
 
 .header {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
   position: relative;
   height: 108px;
 
+  &__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+  }
+
   &__menu {
     position: absolute;
+    left: 0;
     display: inline-flex;
-    height: 108px;
+    height: 100%;
     width: 132px;
     justify-content: center;
     align-items: center;
@@ -18,7 +27,8 @@
 
   &__search {
     padding: 16px;
-    width: 600px;
+    max-width: 600px;
+    width: 500px;
     height: 48px;
     border: none;
     background: rgba(242, 242, 242, 0.48);
@@ -43,11 +53,26 @@
     }
   }
 
-  &__main {
-    width: 100%;
-    padding: 0 20px;
+  @media (max-width: $xs-screen) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 90px;
+
+    &__container {
+      width: 100%;
+      padding-left: 20px;
+    }
+
+    &__menu {
+      position: static;
+      min-width: 90px;
+    }
+
+    &__search {
+      max-width: 300px;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
   }
 }
