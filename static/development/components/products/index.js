@@ -11,7 +11,6 @@ export const renderPreparedGoods = (category = "all") => {
       ? products
       : products.filter((product) => product.category === category);
 
-  //
   preparedProducts.length !== 0
     ? preparedProducts.forEach((product) => {
         const productItemContainer = document.createElement("div");
