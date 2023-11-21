@@ -1,22 +1,25 @@
 import "./index.scss";
 import products from "../../../source/data/products.json";
 
-const productsList = document.querySelector('.products__list');
+const productsList = document.querySelector(".products__list");
 
-export const renderPreparedGoods = (category = 'all') => {
-  productsList.innerHTML = '';
+export const renderPreparedGoods = (category = "all") => {
+  productsList.innerHTML = "";
 
-  const preparedProducts = category === 'all'
-    ? products
-    : products.filter(product => product.category === category);
+  const preparedProducts =
+    category === "all"
+      ? products
+      : products.filter((product) => product.category === category);
 
+  //
   preparedProducts.length !== 0
-    ? (
-      preparedProducts.forEach(product => {
-        const productItemContainer = document.createElement('div');
-        productItemContainer.className = 'products__item-container';
+    ? preparedProducts.forEach((product) => {
+        const productItemContainer = document.createElement("div");
+        productItemContainer.className = "products__item-container";
 
-        productItemContainer.insertAdjacentHTML('beforeend', `
+        productItemContainer.insertAdjacentHTML(
+          "beforeend",
+          `
           <div class="products__item">
             <div class="products__item-img">
               <img src="${product.img}" alt="${product.category}">
@@ -59,17 +62,19 @@ export const renderPreparedGoods = (category = 'all') => {
               </button>
             </div>
           </div>
-        `)
+        `
+        );
 
-        productsList.append(productItemContainer)
+        productsList.append(productItemContainer);
       })
-    ) : (
-      productsList.insertAdjacentHTML("beforeend", `
+    : productsList.insertAdjacentHTML(
+        "beforeend",
+        `
         <p class="products__message">
           No products available 
         <p/>
-      `)
-    )
-}
+      `
+      );
+};
 
 renderPreparedGoods();
