@@ -1,302 +1,395 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/static/source/pages/index/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c12e06d02d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amazon</title>
-  <link rel="stylesheet" href="/static/source/pages/index/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://kit.fontawesome.com/c12e06d02d.js" crossorigin="anonymous"></script>
-</head>
+  <body class="page">
+    <!-- region header -->
+    <nav class="menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#"> ITEM </a>
+        </li>
 
-<body class="page">
-  <!-- region header -->
-  <nav class="menu" id="menu">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          ITEM
-        </a>
-      </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#"> ITEM </a>
+        </li>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          ITEM
-        </a>
-      </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#"> ITEM </a>
+        </li>
+      </ul>
+    </nav>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          ITEM
-        </a>
-      </li>
+    <header class="header container">
+      <div class="header__container">
+        <button class="header__menu">
+          <a href="#menu" class="header__menu-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M2.66667 24.0067C2.66667 24.74 3.26133 25.3333 3.99333 25.3333H14.6733C15.0252 25.3333 15.3626 25.1936 15.6114 24.9448C15.8602 24.696 16 24.3585 16 24.0067C16 23.6548 15.8602 23.3174 15.6114 23.0686C15.3626 22.8198 15.0252 22.68 14.6733 22.68H3.99333C3.26 22.68 2.66667 23.2733 2.66667 24.0067Z"
+                fill="white"
+              />
+              <path
+                d="M2.66665 16C2.66665 16.7333 3.26131 17.3267 3.99331 17.3267H28.0066C28.3585 17.3267 28.6959 17.1869 28.9447 16.9381C29.1935 16.6893 29.3333 16.3519 29.3333 16C29.3333 15.6482 29.1935 15.3107 28.9447 15.0619C28.6959 14.8131 28.3585 14.6733 28.0066 14.6733H3.99331C3.25998 14.6733 2.66665 15.268 2.66665 16Z"
+                fill="white"
+              />
+              <path
+                d="M3.99331 9.31999C3.64146 9.31999 3.30402 9.18022 3.05522 8.93142C2.80642 8.68262 2.66665 8.34518 2.66665 7.99332C2.66665 7.64147 2.80642 7.30403 3.05522 7.05523C3.30402 6.80643 3.64146 6.66666 3.99331 6.66666H20.0066C20.1809 6.66666 20.3534 6.70097 20.5143 6.76764C20.6753 6.83431 20.8215 6.93204 20.9447 7.05523C21.0679 7.17842 21.1657 7.32467 21.2323 7.48563C21.299 7.64659 21.3333 7.8191 21.3333 7.99332C21.3333 8.16754 21.299 8.34006 21.2323 8.50102C21.1657 8.66198 21.0679 8.80823 20.9447 8.93142C20.8215 9.05461 20.6753 9.15233 20.5143 9.219C20.3534 9.28568 20.1809 9.31999 20.0066 9.31999H3.99331Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </button>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          ITEM
-        </a>
-      </li>
+        <div class="header__center">
+          <a href="#" class="header__logo">
+            <img src="/static/source/img/logo.png" alt="logo" />
+          </a>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          ITEM
-        </a>
-      </li>
-    </ul>
-  </nav>
+          <div class="header__search-container">
+            <input
+              type="text"
+              placeholder="Search Mobiles, TV, Laptops,Tablets, Beauty & Personal Care etc."
+              class="header__search"
+            />
+            <div class="header__search-img">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.5 17.5L13.7617 13.755L17.5 17.5ZM15.8333 8.74999C15.8333 10.6286 15.0871 12.4303 13.7587 13.7587C12.4303 15.087 10.6286 15.8333 8.75001 15.8333C6.87139 15.8333 5.06972 15.087 3.74133 13.7587C2.41295 12.4303 1.66667 10.6286 1.66667 8.74999C1.66667 6.87137 2.41295 5.0697 3.74133 3.74132C5.06972 2.41293 6.87139 1.66666 8.75001 1.66666C10.6286 1.66666 12.4303 2.41293 13.7587 3.74132C15.0871 5.0697 15.8333 6.87137 15.8333 8.74999V8.74999Z"
+                  stroke="#232F3E"
+                  stroke-opacity="0.32"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <a href="#" class="header__basket">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M19.26 9.696L20.645 18.696C20.6888 18.9808 20.6705 19.2718 20.5914 19.5489C20.5123 19.8261 20.3743 20.0828 20.1867 20.3016C19.9992 20.5204 19.7665 20.6961 19.5047 20.8167C19.243 20.9372 18.9582 20.9997 18.67 21H5.33001C5.04164 21 4.75668 20.9377 4.49465 20.8173C4.23263 20.6969 3.99974 20.5212 3.81196 20.3024C3.62417 20.0836 3.48593 19.8267 3.40672 19.5494C3.3275 19.2721 3.30918 18.981 3.35301 18.696L4.73801 9.696C4.81066 9.22359 5.05009 8.79282 5.41294 8.4817C5.77578 8.17059 6.23805 7.9997 6.71601 8H17.284C17.7618 7.99994 18.2238 8.17094 18.5865 8.48203C18.9491 8.79312 19.1884 9.22376 19.261 9.696H19.26Z"
+                stroke="#232F3E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3C11.4696 3 10.9609 3.21071 10.5858 3.58579C10.2107 3.96086 10 4.46957 10 5"
+                stroke="#232F3E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- end region -->
 
-  <header class="header container container__header">
-    <button class="header__menu">
-      <a href="#menu" class="header__menu-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <path
-            d="M2.66667 24.0067C2.66667 24.74 3.26133 25.3333 3.99333 25.3333H14.6733C15.0252 25.3333 15.3626 25.1936 15.6114 24.9448C15.8602 24.696 16 24.3585 16 24.0067C16 23.6548 15.8602 23.3174 15.6114 23.0686C15.3626 22.8198 15.0252 22.68 14.6733 22.68H3.99333C3.26 22.68 2.66667 23.2733 2.66667 24.0067Z"
-            fill="white" />
-          <path
-            d="M2.66665 16C2.66665 16.7333 3.26131 17.3267 3.99331 17.3267H28.0066C28.3585 17.3267 28.6959 17.1869 28.9447 16.9381C29.1935 16.6893 29.3333 16.3519 29.3333 16C29.3333 15.6482 29.1935 15.3107 28.9447 15.0619C28.6959 14.8131 28.3585 14.6733 28.0066 14.6733H3.99331C3.25998 14.6733 2.66665 15.268 2.66665 16Z"
-            fill="white" />
-          <path
-            d="M3.99331 9.31999C3.64146 9.31999 3.30402 9.18022 3.05522 8.93142C2.80642 8.68262 2.66665 8.34518 2.66665 7.99332C2.66665 7.64147 2.80642 7.30403 3.05522 7.05523C3.30402 6.80643 3.64146 6.66666 3.99331 6.66666H20.0066C20.1809 6.66666 20.3534 6.70097 20.5143 6.76764C20.6753 6.83431 20.8215 6.93204 20.9447 7.05523C21.0679 7.17842 21.1657 7.32467 21.2323 7.48563C21.299 7.64659 21.3333 7.8191 21.3333 7.99332C21.3333 8.16754 21.299 8.34006 21.2323 8.50102C21.1657 8.66198 21.0679 8.80823 20.9447 8.93142C20.8215 9.05461 20.6753 9.15233 20.5143 9.219C20.3534 9.28568 20.1809 9.31999 20.0066 9.31999H3.99331Z"
-            fill="white" />
-        </svg>
-      </a>
-    </button>
+    <!-- region main -->
+    <main class="main container container__main">
+      <section class="main__swiper">
+        <div class="main__swiper-container swiper">
+          <div class="main__swiper-wrapper swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="main__swiper-item">
+                <div class="main__swiper-content">
+                  <h5 class="main__swiper-content-model">SONY WH-H910N</h5>
+                  <h4 class="main__swiper-content-title title title--xl">
+                    Best in Hi-Res and
+                    <br />
+                    Noise Cancelling
+                  </h4>
 
-    <div class="header__container">
-      <a href="#" class="header__logo">
-        <img src="/static/source/img/logo.png" alt="logo">
-      </a>
+                  <p class="main__swiper-content-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc, est enim mauris dolor ultrices mi ipsum risus.
+                    Adipiscing consequat, bibendum fringilla dolor ornare.
+                    Turpis sit egestas condimentum tincidunt lobortis donec
+                    massa ultricies. Urna, cursus eleifend neque ut nibh est.
+                  </p>
 
-      <div class="header__search-container">
-        <input type="text" placeholder="Search Mobiles, TV, Laptops,Tablets, Beauty & Personal Care etc."
-          class="header__search">
-        <div class="header__search-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path
-              d="M17.5 17.5L13.7617 13.755L17.5 17.5ZM15.8333 8.74999C15.8333 10.6286 15.0871 12.4303 13.7587 13.7587C12.4303 15.087 10.6286 15.8333 8.75001 15.8333C6.87139 15.8333 5.06972 15.087 3.74133 13.7587C2.41295 12.4303 1.66667 10.6286 1.66667 8.74999C1.66667 6.87137 2.41295 5.0697 3.74133 3.74132C5.06972 2.41293 6.87139 1.66666 8.75001 1.66666C10.6286 1.66666 12.4303 2.41293 13.7587 3.74132C15.0871 5.0697 15.8333 6.87137 15.8333 8.74999V8.74999Z"
-              stroke="#232F3E" stroke-opacity="0.32" stroke-linecap="round" />
+                  <div class="main__swiper-content-btns">
+                    <button class="button button--blue">
+                      Buy now for $129
+                    </button>
+
+                    <button class="button button--transparent">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+                <div class="main__swiper-img">
+                  <img
+                    src="../static/source/img/swiper/headphones.png"
+                    alt="headphones"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main__swiper-item">
+                <div class="main__swiper-content">
+                  <h5 class="main__swiper-content-model">SONY WH-H910N</h5>
+                  <h4 class="main__swiper-content-title title title--xl">
+                    Best in Hi-Res and
+                    <br />
+                    Noise Cancelling
+                  </h4>
+
+                  <p class="main__swiper-content-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc, est enim mauris dolor ultrices mi ipsum risus.
+                    Adipiscing consequat, bibendum fringilla dolor ornare.
+                    Turpis sit egestas condimentum tincidunt lobortis donec
+                    massa ultricies. Urna, cursus eleifend neque ut nibh est.
+                  </p>
+
+                  <div class="main__swiper-content-btns">
+                    <button class="button button--blue">
+                      Buy now for $129
+                    </button>
+
+                    <button class="button button--transparent">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+                <div class="main__swiper-img">
+                  <img
+                    src="../static/source/img/swiper/headphones.png"
+                    alt="headphones"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main__swiper-item">
+                <div class="main__swiper-content">
+                  <h5 class="main__swiper-content-model">SONY WH-H910N</h5>
+                  <h4 class="main__swiper-content-title title title--xl">
+                    Best in Hi-Res and
+                    <br />
+                    Noise Cancelling
+                  </h4>
+
+                  <p class="main__swiper-content-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc, est enim mauris dolor ultrices mi ipsum risus.
+                    Adipiscing consequat, bibendum fringilla dolor ornare.
+                    Turpis sit egestas condimentum tincidunt lobortis donec
+                    massa ultricies. Urna, cursus eleifend neque ut nibh est.
+                  </p>
+
+                  <div class="main__swiper-content-btns">
+                    <button class="button button--blue">
+                      Buy now for $129
+                    </button>
+
+                    <button class="button button--transparent">
+                      Learn more
+                    </button>
+                  </div>
+                </div>
+                <div class="main__swiper-img">
+                  <img
+                    src="../static/source/img/swiper/headphones.png"
+                    alt="headphones"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-btn-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="96"
+            height="96"
+            viewBox="0 0 96 96"
+            fill="none"
+          >
+            <g filter="url(#filter0_d_1_83)">
+              <rect x="24" y="18" width="48" height="48" rx="24" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M58.8 41.8507C58.8 42.2087 58.6578 42.552 58.4047 42.8051C58.1515 43.0583 57.8082 43.2005 57.4502 43.2005H41.8108L47.6071 48.9941C47.7326 49.1196 47.8321 49.2686 47.9 49.4325C47.968 49.5965 48.0029 49.7723 48.0029 49.9498C48.0029 50.1272 47.968 50.303 47.9 50.467C47.8321 50.6309 47.7326 50.7799 47.6071 50.9054C47.4816 51.0309 47.3326 51.1305 47.1686 51.1984C47.0046 51.2663 46.8289 51.3013 46.6514 51.3013C46.4739 51.3013 46.2981 51.2663 46.1342 51.1984C45.9702 51.1305 45.8212 51.0309 45.6957 50.9054L37.5966 42.8063C37.4709 42.681 37.3711 42.532 37.3031 42.368C37.235 42.204 37.2 42.0282 37.2 41.8507C37.2 41.6731 37.235 41.4973 37.3031 41.3333C37.3711 41.1693 37.4709 41.0204 37.5966 40.895L45.6957 32.7959C45.9491 32.5424 46.2929 32.4 46.6514 32.4C47.0098 32.4 47.3536 32.5424 47.6071 32.7959C47.8605 33.0493 48.0029 33.3931 48.0029 33.7516C48.0029 34.11 47.8605 34.4538 47.6071 34.7073L41.8108 40.5008H57.4502C57.8082 40.5008 58.1515 40.643 58.4047 40.8962C58.6578 41.1493 58.8 41.4927 58.8 41.8507Z"
+                fill="#232F3E"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_1_83"
+                x="0"
+                y="0"
+                width="96"
+                height="96"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="6" />
+                <feGaussianBlur stdDeviation="12" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.137255 0 0 0 0 0.184314 0 0 0 0 0.243137 0 0 0 0.08 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_1_83"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_1_83"
+                  result="shape"
+                />
+              </filter>
+            </defs>
           </svg>
         </div>
-      </div>
-      <a href="#" class="header__basket">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M19.26 9.696L20.645 18.696C20.6888 18.9808 20.6705 19.2718 20.5914 19.5489C20.5123 19.8261 20.3743 20.0828 20.1867 20.3016C19.9992 20.5204 19.7665 20.6961 19.5047 20.8167C19.243 20.9372 18.9582 20.9997 18.67 21H5.33001C5.04164 21 4.75668 20.9377 4.49465 20.8173C4.23263 20.6969 3.99974 20.5212 3.81196 20.3024C3.62417 20.0836 3.48593 19.8267 3.40672 19.5494C3.3275 19.2721 3.30918 18.981 3.35301 18.696L4.73801 9.696C4.81066 9.22359 5.05009 8.79282 5.41294 8.4817C5.77578 8.17059 6.23805 7.9997 6.71601 8H17.284C17.7618 7.99994 18.2238 8.17094 18.5865 8.48203C18.9491 8.79312 19.1884 9.22376 19.261 9.696H19.26Z"
-            stroke="#232F3E" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M14 5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3C11.4696 3 10.9609 3.21071 10.5858 3.58579C10.2107 3.96086 10 4.46957 10 5"
-            stroke="#232F3E" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </a>
-    </div>
-  </header>
-  <!-- end region -->
 
-  <!-- region main -->
-  <main class="main container container__main">
-    <section class="main__swiper">
-      <div class="main__swiper-container swiper">
-        <div class="main__swiper-wrapper swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="main__swiper-item">
-              <div class="main__swiper-content">
-                <h5 class="main__swiper-content-model">
-                  SONY WH-H910N
-                </h5>
-                <h4 class="main__swiper-content-title title title--xl">
-                  Best in Hi-Res and
-                  <br>
-                  Noise Cancelling
-                </h4>
+        <div class="swiper-btn-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="96"
+            height="96"
+            viewBox="0 0 96 96"
+            fill="none"
+          >
+            <g filter="url(#filter0_d_1_80)">
+              <rect
+                width="48"
+                height="48"
+                rx="24"
+                transform="matrix(-1 0 0 1 72 18)"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M37.2 41.8507C37.2 42.2087 37.3422 42.552 37.5953 42.8051C37.8485 43.0583 38.1918 43.2005 38.5498 43.2005H54.1892L48.3929 48.9941C48.2674 49.1196 48.1679 49.2686 48.1 49.4325C48.032 49.5965 47.9971 49.7723 47.9971 49.9498C47.9971 50.1272 48.032 50.303 48.1 50.467C48.1679 50.6309 48.2674 50.7799 48.3929 50.9054C48.5184 51.0309 48.6674 51.1305 48.8314 51.1984C48.9954 51.2663 49.1711 51.3013 49.3486 51.3013C49.5261 51.3013 49.7019 51.2663 49.8658 51.1984C50.0298 51.1305 50.1788 51.0309 50.3043 50.9054L58.4034 42.8063C58.5291 42.681 58.6289 42.532 58.6969 42.368C58.765 42.204 58.8 42.0282 58.8 41.8507C58.8 41.6731 58.765 41.4973 58.6969 41.3333C58.6289 41.1693 58.5291 41.0204 58.4034 40.895L50.3043 32.7959C50.0509 32.5424 49.7071 32.4 49.3486 32.4C48.9902 32.4 48.6464 32.5424 48.3929 32.7959C48.1395 33.0493 47.9971 33.3931 47.9971 33.7516C47.9971 34.11 48.1395 34.4538 48.3929 34.7073L54.1892 40.5008H38.5498C38.1918 40.5008 37.8485 40.643 37.5953 40.8962C37.3422 41.1493 37.2 41.4927 37.2 41.8507Z"
+                fill="#232F3E"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_1_80"
+                x="0"
+                y="0"
+                width="96"
+                height="96"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="6" />
+                <feGaussianBlur stdDeviation="12" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.137255 0 0 0 0 0.184314 0 0 0 0 0.243137 0 0 0 0.08 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_1_80"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_1_80"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </section>
 
-                <p class="main__swiper-content-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum
-                  risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt
-                  lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.
-                </p>
+      <section class="categories main__categories">
+        <div class="main__categories-title-container">
+          <h3 class="main__categories-title title title--l">
+            Select Categories
+          </h3>
 
-                <div class="main__swiper-content-btns">
-                  <button class="button button--blue">
-                    Buy now for $129
-                  </button>
+          <a href="#" class="main__categories-all-categories"> See All </a>
+        </div>
 
-                  <button class="button button--transparent">
-                    Learn more
-                  </button>
-                </div>
-              </div>
-              <div class="main__swiper-img">
-                <img src="../static/source/img/swiper/headphones.png" alt="headphones">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main__swiper-item">
-              <div class="main__swiper-content">
-                <h5 class="main__swiper-content-model">
-                  SONY WH-H910N
-                </h5>
-                <h4 class="main__swiper-content-title title title--xl">
-                  Best in Hi-Res and
-                  <br>
-                  Noise Cancelling
-                </h4>
+        <div class="main__categories-container">
+          <div class="main__categories-swiper swiper">
+            <div
+              class="main__categories-card-container swiper-wrapper cards-list"
+            ></div>
 
-                <p class="main__swiper-content-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum
-                  risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt
-                  lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.
-                </p>
-
-                <div class="main__swiper-content-btns">
-                  <button class="button button--blue">
-                    Buy now for $129
-                  </button>
-
-                  <button class="button button--transparent">
-                    Learn more
-                  </button>
-                </div>
-              </div>
-              <div class="main__swiper-img">
-                <img src="../static/source/img/swiper/headphones.png" alt="headphones">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main__swiper-item">
-              <div class="main__swiper-content">
-                <h5 class="main__swiper-content-model">
-                  SONY WH-H910N
-                </h5>
-                <h4 class="main__swiper-content-title title title--xl">
-                  Best in Hi-Res and
-                  <br>
-                  Noise Cancelling
-                </h4>
-
-                <p class="main__swiper-content-descr">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum
-                  risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt
-                  lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.
-                </p>
-
-                <div class="main__swiper-content-btns">
-                  <button class="button button--blue">
-                    Buy now for $129
-                  </button>
-
-                  <button class="button button--transparent">
-                    Learn more
-                  </button>
-                </div>
-              </div>
-              <div class="main__swiper-img">
-                <img src="../static/source/img/swiper/headphones.png" alt="headphones">
-              </div>
-            </div>
+            <p class="products__message"></p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="swiper-btn-prev">
-        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-          <g filter="url(#filter0_d_1_83)">
-            <rect x="24" y="18" width="48" height="48" rx="24" fill="white" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M58.8 41.8507C58.8 42.2087 58.6578 42.552 58.4047 42.8051C58.1515 43.0583 57.8082 43.2005 57.4502 43.2005H41.8108L47.6071 48.9941C47.7326 49.1196 47.8321 49.2686 47.9 49.4325C47.968 49.5965 48.0029 49.7723 48.0029 49.9498C48.0029 50.1272 47.968 50.303 47.9 50.467C47.8321 50.6309 47.7326 50.7799 47.6071 50.9054C47.4816 51.0309 47.3326 51.1305 47.1686 51.1984C47.0046 51.2663 46.8289 51.3013 46.6514 51.3013C46.4739 51.3013 46.2981 51.2663 46.1342 51.1984C45.9702 51.1305 45.8212 51.0309 45.6957 50.9054L37.5966 42.8063C37.4709 42.681 37.3711 42.532 37.3031 42.368C37.235 42.204 37.2 42.0282 37.2 41.8507C37.2 41.6731 37.235 41.4973 37.3031 41.3333C37.3711 41.1693 37.4709 41.0204 37.5966 40.895L45.6957 32.7959C45.9491 32.5424 46.2929 32.4 46.6514 32.4C47.0098 32.4 47.3536 32.5424 47.6071 32.7959C47.8605 33.0493 48.0029 33.3931 48.0029 33.7516C48.0029 34.11 47.8605 34.4538 47.6071 34.7073L41.8108 40.5008H57.4502C57.8082 40.5008 58.1515 40.643 58.4047 40.8962C58.6578 41.1493 58.8 41.4927 58.8 41.8507Z"
-              fill="#232F3E" />
-          </g>
-          <defs>
-            <filter id="filter0_d_1_83" x="0" y="0" width="96" height="96" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha" />
-              <feOffset dy="6" />
-              <feGaussianBlur stdDeviation="12" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0.137255 0 0 0 0 0.184314 0 0 0 0 0.243137 0 0 0 0.08 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_83" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_83" result="shape" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-
-      <div class="swiper-btn-next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-          <g filter="url(#filter0_d_1_80)">
-            <rect width="48" height="48" rx="24" transform="matrix(-1 0 0 1 72 18)" fill="white" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M37.2 41.8507C37.2 42.2087 37.3422 42.552 37.5953 42.8051C37.8485 43.0583 38.1918 43.2005 38.5498 43.2005H54.1892L48.3929 48.9941C48.2674 49.1196 48.1679 49.2686 48.1 49.4325C48.032 49.5965 47.9971 49.7723 47.9971 49.9498C47.9971 50.1272 48.032 50.303 48.1 50.467C48.1679 50.6309 48.2674 50.7799 48.3929 50.9054C48.5184 51.0309 48.6674 51.1305 48.8314 51.1984C48.9954 51.2663 49.1711 51.3013 49.3486 51.3013C49.5261 51.3013 49.7019 51.2663 49.8658 51.1984C50.0298 51.1305 50.1788 51.0309 50.3043 50.9054L58.4034 42.8063C58.5291 42.681 58.6289 42.532 58.6969 42.368C58.765 42.204 58.8 42.0282 58.8 41.8507C58.8 41.6731 58.765 41.4973 58.6969 41.3333C58.6289 41.1693 58.5291 41.0204 58.4034 40.895L50.3043 32.7959C50.0509 32.5424 49.7071 32.4 49.3486 32.4C48.9902 32.4 48.6464 32.5424 48.3929 32.7959C48.1395 33.0493 47.9971 33.3931 47.9971 33.7516C47.9971 34.11 48.1395 34.4538 48.3929 34.7073L54.1892 40.5008H38.5498C38.1918 40.5008 37.8485 40.643 37.5953 40.8962C37.3422 41.1493 37.2 41.4927 37.2 41.8507Z"
-              fill="#232F3E" />
-          </g>
-          <defs>
-            <filter id="filter0_d_1_80" x="0" y="0" width="96" height="96" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha" />
-              <feOffset dy="6" />
-              <feGaussianBlur stdDeviation="12" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0.137255 0 0 0 0 0.184314 0 0 0 0 0.243137 0 0 0 0.08 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_80" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_80" result="shape" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-    </section>
-
-    <section class="categories main__categories">
-      <div class="main__categories-title-container">
-        <h3 class="main__categories-title title title--l">
-          Select Categories
-        </h3>
-
-        <a href="#" class="main__categories-all-categories">
-          See All
-        </a>
-      </div>
-
-      <div class="main__categories-container">
-        <div class="main__categories-swiper swiper">
-          <div class="main__categories-card-container swiper-wrapper cards-list">
-          </div>
-
-          <p class="products__message">
-          </p>
+      <section class="products main__products">
+        <div class="products__title-container">
+          <h3 class="products__title title title--l">Best Seller Products</h3>
         </div>
-      </div>
-    </section>
 
-    <section class="products main__products">
-      <div class="products__title-container">
-        <h3 class="products__title title title--l">
-          Best Seller Products
-        </h3>
-      </div>
+        <div class="products__list"></div>
+      </section>
+    </main>
+    <!-- end region -->
 
-      <div class="products__list">
-      </div>
-    </section>
-  </main>
-  <!-- end region -->
-
-  <footer class="footer container">
-
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/static/source/pages/index/index.js"></script>
-</body>
-
+    <script src="/static/source/pages/index/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
