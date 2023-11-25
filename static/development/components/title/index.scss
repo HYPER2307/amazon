@@ -16,7 +16,16 @@
 
   @media (max-width: $xs-screen) {
     &--xl {
-      font-size: 40px;
+      font-size: 37px;
+      line-height: 50px;
+
+    }
+  }
+
+  @media (max-width: $small-screen) {
+    &--xl {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }
